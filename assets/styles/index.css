@@ -1,0 +1,294 @@
+body {
+  font-family: "Alexandria", serif;
+}
+
+/* Start main */
+
+.container {
+  background-image: url(../images/خلفية.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
+.nav-one {
+  padding-top: 20px;
+
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+main header nav .part-one {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e2ede8;
+  width: 70%;
+  height: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+main header nav .part-one a {
+  color: #494f4e;
+  text-decoration: none;
+  padding: 20px;
+}
+
+.nav-two {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+main header nav .part-two {
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #ddf0eb;
+  width: 70%;
+  height: 30px;
+
+}
+main header nav .part-two a {
+  color: #494f4e;
+  text-decoration: none;
+  padding: 20px;
+}
+
+main header nav {
+  direction: rtl;
+}
+
+.hero-section{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+main .main-title{
+  color: #6c9894;
+  text-align: center;
+
+}
+
+main .main-title .title{
+  padding: 10px;
+}
+.main-btn{
+  background-color: #6c9894;
+  color: #fff;
+  width: 120px;
+  height: 40px;
+  border: 2px solid #6c9894;
+  border-radius: 10px;
+}
+/* End main */
+
+/* Start Section services */
+
+section .container-one {
+  background-color: #6c9894;
+  padding: 50px;
+}
+section .container-one .service-title {
+  font-size: 48px;
+  font-weight: bold;
+  color: #fff;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+section h3 {
+  color: #6c9894;
+  text-align: center;
+  padding: 20px;
+}
+section .services-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+section .imgs {
+  width: 100%;
+  height: 70%;
+}
+
+section .service-card {
+  background-color: #fff;
+  border: 2px solid #fff;
+  height: 14em;
+  width: 23em;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 20px;
+  transition: 0.7s;
+  cursor: pointer;
+}
+
+section .service-card:hover {
+  transform: scale(1.2);
+}
+/* End Section services */
+
+/* Start Video Section */
+section .container-two {
+  padding: 50px;
+  background-image: url(../images/خلفية.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+section .container-two .video-title {
+  font-size: 48px;
+  font-weight: bold;
+  color: black;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+section .video-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+section .video-card {
+  background-color: #fff;
+  border: 2px solid #fff;
+  height: 14em;
+  width: 23em;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 20px;
+}
+
+section .video {
+  width: 100%;
+  height: 100%;
+}
+
+/* End Video Section */
+
+/* End Before And after Section */
+section .container-three {
+  background-color: #6c9894;
+  padding: 50px;
+}
+
+section .container-three .before-title {
+  font-size: 48px;
+  font-weight: bold;
+  color: #fff;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+section .Patient-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+section .patient-card {
+  background-color: #fff;
+  border: 3px solid #fff;
+  height: 20em;
+  width: 30em;
+  border-radius: 15px;
+  overflow: hidden;
+  margin: 30px;
+  display: flex;
+  flex-direction: row;
+  transition: 0.7s ease;
+}
+
+section .patient-card:hover {
+  transform: scale(1.2);
+}
+
+section .patient-card div {
+  width: 50%;
+  height: 100%;
+  position: relative;
+}
+section .patient-card div .before {
+  width: 100%;
+  height: 100%;
+}
+
+section .patient-card div .after {
+  height: 100%;
+  width: 100%;
+  border-left: 3px solid #fff;
+}
+
+section .container-three .before-text {
+  border: 2px solid #010101;
+  border-radius: 7px;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #0e0e0e;
+  position: absolute;
+  font-size: 22px;
+  top: 46%;
+  left: 3%;
+  height: 32px;
+  width: 71px;
+  text-align: center;
+}
+
+section .container-three .after-text {
+  border: 2px solid #010101;
+  border-radius: 7px;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #0e0e0e;
+  position: absolute;
+  font-size: 22px;
+  top: 46%;
+  right: 3%;
+  height: 32px;
+  width: 71px;
+  text-align: center;
+}
+/* End Before And after Section */
+/* Start location Section */
+.container-four {
+  background-image: url(../images/خلفية.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 50px;
+}
+
+.container-four .location {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container-four .location .google-map {
+  margin: 50px;
+}
+
+.container-four .dir-ar {
+  direction: rtl;
+  list-style: none;
+}
+/* End location Section */
+
+.carousel-inner img {
+  width: 100%;
+  height: auto;
+}
