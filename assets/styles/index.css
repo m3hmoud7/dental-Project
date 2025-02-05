@@ -1,111 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Sansita+Swashed:wght@300..900&display=swap");
+
 body {
-  font-family: "Alexandria", serif;
+  font-family: "Almarai", serif;
+  font-weight: 500;
+
 }
 
 /* Start main */
-
-.container {
+main {
   background-image: url(../images/خلفية.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   width: 100%;
+
+}
+header {
+  z-index: 999;
+  /* height: auto; */
+  
+}
+.nav-link {
+  color: #000;
+  padding: 10px 15px;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.nav-one {
-  padding-top: 20px;
+.nav-link:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border-radius: 5px;
+}
+main nav {
 
+  background-color: #ffffff;
+}
+
+
+.dropdown-menu{
+  left: unset !important;
+}
+
+
+.dropdown-item {
+  color: #000; 
+  margin: 0;  
+  transition: background-color 0.3s ease, color 0.3s ease;
+
+}
+
+.dropdown-item:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+
+.hero-section {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
 }
-
-main header nav .part-one {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #e2ede8;
-  width: 70%;
-  height: 30px;
-  margin: 0;
-  padding: 0;
+.hero-section .main-link{
+  animation-delay: 2s;
 }
 
-main header nav .part-one a {
-  color: #494f4e;
-  text-decoration: none;
-  padding: 20px;
-}
-
-.nav-two {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-}
-
-main header nav .part-two {
-  list-style: none;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  background-color: #ddf0eb;
-  width: 70%;
-  height: 30px;
-
-}
-main header nav .part-two a {
-  color: #494f4e;
-  text-decoration: none;
-  padding: 20px;
-}
-
-main header nav {
-  direction: rtl;
-}
-
-.hero-section{
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
-
-main .main-title{
-  color: #6c9894;
+main .main-title {
+  color: #00555e;
   text-align: center;
-
 }
 
-main .main-title .title{
-  padding: 10px;
+main .main-title .title-one {
+  font-family: "Sansita Swashed", serif;
+  font-size: 48px;
+  font-weight: 600;
 }
-.main-btn{
-  background-color: #6c9894;
+main .main-title .title {
+  font-weight: 600;
+  padding: 15px;
+  animation-duration: 2s;
+}
+.main-btn {
+  background-color: #00555e;
   color: #fff;
-  width: 120px;
-  height: 40px;
-  border: 2px solid #6c9894;
+  width: 220px;
+  height: 54px;
+  border: 2px solid #00555e;
   border-radius: 10px;
+  transition: 0.7s ease;
 }
+
+.main-btn:hover {
+  transform: scale(1.2);
+}
+main .main-container .icons {
+  animation-delay: 2s;
+}
+main .main-container .icons .circle {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-color: #00555e;
+  border: 1px solid #00555e;
+  border-radius: 50%;
+  margin: 5px;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s ease all;
+}
+
+main .main-container .icons .circle:hover {
+  transform: scale(1.2);
+}
+
+main .hero-photo{
+  animation-duration: 3s;
+
+}
+
 /* End main */
 
 /* Start Section services */
 
 section .container-one {
-  background-color: #6c9894;
+  background-color: #00555e;
   padding: 50px;
 }
 section .container-one .service-title {
   font-size: 48px;
   font-weight: bold;
   color: #fff;
-  margin: 20px;
-  display: flex;
-  justify-content: center;
+  margin: 10px;
+  animation-duration: 2s;
+
+}
+
+section .container-one .service-title-english {
+  font-size: 48px;
+  font-weight: bold;
+  color: #00555e;
+  margin: 10px;
+  background-color: #fff;
+  border-radius: 20px;
+  font-family: "Sansita Swashed", serif;
+  width: 320px;
+  height: 60px;
+  text-align: center;
+  animation-duration: 3s;
 }
 
 section h3 {
-  color: #6c9894;
+  color: #00555e;
+  font-weight: 600;
   text-align: center;
   padding: 20px;
 }
@@ -114,27 +161,32 @@ section .services-cards {
   justify-content: center;
   flex-wrap: wrap;
   align-items: center;
+  animation-delay: 2s;
 }
 
 section .imgs {
-  width: 100%;
+  width: 50%;
   height: 70%;
 }
 
 section .service-card {
   background-color: #fff;
   border: 2px solid #fff;
-  height: 14em;
-  width: 23em;
-  border-radius: 10px;
+  height: 20em;
+  width: 20em;
+  border-radius: 50%;
   overflow: hidden;
   margin: 20px;
-  transition: 0.7s;
+  transition: 0.6s;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
 }
 
 section .service-card:hover {
-  transform: scale(1.2);
+  transform: scale(1.13);
 }
 /* End Section services */
 
@@ -146,14 +198,25 @@ section .container-two {
   background-position: center;
   background-size: cover;
 }
+section .container-two .video-title-english {
+  font-size: 48px;
+  font-weight: bold;
+  color: #fff;
+  margin: 10px;
+  background-color: #00555e;
+  border-radius: 20px;
+  width: 240px;
+  height: 60px;
+  text-align: center;
+  font-family: "Sansita Swashed", serif;
+  animation-duration: 3s;
 
+}
 section .container-two .video-title {
   font-size: 48px;
   font-weight: bold;
-  color: black;
-  margin: 20px;
-  display: flex;
-  justify-content: center;
+  color: #00555e;
+  animation-duration: 3s;
 }
 
 section .video-cards {
@@ -161,6 +224,7 @@ section .video-cards {
   justify-content: center;
   flex-wrap: wrap;
   align-items: center;
+  animation-duration: 2s;
 }
 
 section .video-card {
@@ -180,9 +244,10 @@ section .video {
 
 /* End Video Section */
 
-/* End Before And after Section */
-section .container-three {
-  background-color: #6c9894;
+/* start Before And after Section */
+
+#before-section{
+  background-color: #00555e;
   padding: 50px;
 }
 
@@ -190,78 +255,124 @@ section .container-three .before-title {
   font-size: 48px;
   font-weight: bold;
   color: #fff;
-  margin: 20px;
-  display: flex;
-  justify-content: center;
+  margin: 10px;
+  animation-duration: 2s;
+
 }
 
-section .Patient-cards {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  align-items: center;
-}
-
-section .patient-card {
+section .container-three .before-title-english {
+  font-size: 48px;
+  font-weight: bold;
+  color: #00555e;
+  margin: 10px;
   background-color: #fff;
-  border: 3px solid #fff;
-  height: 20em;
-  width: 30em;
-  border-radius: 15px;
-  overflow: hidden;
-  margin: 30px;
-  display: flex;
-  flex-direction: row;
-  transition: 0.7s ease;
+  border-radius: 20px;
+  width: 380px;
+  height: 60px;
+  text-align: center;
+  font-family: "Sansita Swashed", serif;
+  animation-duration: 3s;
 }
 
-section .patient-card:hover {
-  transform: scale(1.2);
+
+section .container-three .more-button{
+  transition: .5s ease;
+}
+section .container-three .more-button:hover{
+  transform: scale(1.3);
 }
 
-section .patient-card div {
-  width: 50%;
-  height: 100%;
+.slider-container {
   position: relative;
+  width: 100%;
+  max-width:  400px;
+  height: 300px; 
+  overflow: hidden;
+  border: 2px solid #fff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  margin-bottom: 20px; 
+  border-radius: 10px; 
 }
-section .patient-card div .before {
+
+
+.slider-container img {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
+  object-fit: cover;
 }
 
-section .patient-card div .after {
+.slider-container .after-img {
+  width: 50%;
+}
+
+
+.slider-container .slider-line {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 3px;
   height: 100%;
-  width: 100%;
-  border-left: 3px solid #fff;
+  background-color: #060606;
+  cursor: pointer;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-section .container-three .before-text {
-  border: 2px solid #010101;
-  border-radius: 7px;
-  background-color: rgba(255, 255, 255, 0.2);
-  color: #0e0e0e;
-  position: absolute;
-  font-size: 22px;
-  top: 46%;
-  left: 3%;
-  height: 32px;
-  width: 71px;
-  text-align: center;
+
+.slider-container .slider-line i {
+  color: black;
+  font-size: 24px;
+  animation: pulse 1.5s infinite;
 }
 
-section .container-three .after-text {
-  border: 2px solid #010101;
-  border-radius: 7px;
-  background-color: rgba(255, 255, 255, 0.2);
-  color: #0e0e0e;
-  position: absolute;
-  font-size: 22px;
-  top: 46%;
-  right: 3%;
-  height: 32px;
-  width: 71px;
-  text-align: center;
+@keyframes pulse {
+  0% {
+      box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.5);
+  }
+  50% {
+      box-shadow: 0 0 0 15px rgba(0, 0, 0, 0);
+  }
+  100% {
+      box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
 }
+
+
+.slider-container .label {
+  position: absolute;
+  top: 10px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 5px 10px;
+  font-size: 14px;
+  z-index: 3;
+  border-radius: 5px;
+}
+
+.slider-container .label.before-label {
+  right: 20px;
+}
+
+.slider-container .label.after-label {
+  left: 20px;
+}
+
+
+.Patient-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+
+
 /* End Before And after Section */
 /* Start location Section */
 .container-four {
@@ -271,6 +382,27 @@ section .container-three .after-text {
   background-repeat: no-repeat;
   padding: 50px;
 }
+.container-four h2{
+  font-size: 48px;
+  font-weight: bold;
+  color: #00555e;
+  animation-duration: 2s;
+}
+
+.container-four .opinions-title-english {
+  font-size: 48px;
+  font-weight: bold;
+  color: #fff;
+  margin: 10px;
+  background-color: #00555e;
+  border-radius: 20px;
+  width: 240px;
+  height: 60px;
+  text-align: center;
+  font-family: "Sansita Swashed", serif;
+  animation-duration: 3s;
+}
+
 
 .container-four .location {
   display: flex;
@@ -286,9 +418,191 @@ section .container-three .after-text {
   direction: rtl;
   list-style: none;
 }
+
+.container-four div .location-title-two{
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+  margin: 20px;
+  background-color: #00555e;
+  border-radius: 20px;
+  width: 240px;
+  height: 60px;
+  text-align: center;
+}
+
+.container-four div .location-title{
+  font-size: 24px;
+  font-weight: bold;
+  color: #00555e;
+}
 /* End location Section */
 
-.carousel-inner img {
+/* Start Swiper */
+.swiper-background {
+  background-image: url(../images/خلفية.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 50px;
+}
+.swiper-background h2{
+  font-size: 48px;
+  font-weight: bold;
+  color: #00555e;
+  animation-duration: 2s;
+}
+
+.swiper-background .opinions-title-english {
+  font-size: 48px;
+  font-weight: bold;
+  color: #fff;
+  margin: 10px;
+  background-color: #00555e;
+  border-radius: 20px;
+  width: 240px;
+  height: 60px;
+  text-align: center;
+  font-family: "Sansita Swashed", serif;
+  animation-duration: 3s;
+}
+
+.swiper {
+  width: 100%;
+  padding: 50px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 350px;
+  height: 350px;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(1.5);
+    transform-origin: center
+}
+
+
+
+/* End Swiper */
+/* Start Footer */
+footer{
+  background-color: #00555e;
   width: 100%;
   height: auto;
 }
+
+
+footer div ul{
+  list-style: none;
+}
+footer div ul a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+  padding: 5px;
+  font-weight: 600;
+}
+
+footer div ul a:hover{
+  text-decoration:  2px underline;
+  color: #fff;
+}
+
+footer .appointments h3{
+  color: #fff;
+  font-size: 24px;
+  padding: 5px;
+  font-weight: bold;
+}
+footer .appointments .appointment-title{
+  color: #fff;
+  font-size: 16px;
+  margin-top: 10px;
+  font-weight: bold;
+
+}
+
+
+footer .appointments .location-title {
+  color: #fff;
+  padding: 5px;
+  font-weight: bold;
+}
+
+footer .contact-us h3{
+  color: #fff;
+  padding: 5px;
+  font-weight: bold;
+}
+
+
+footer .end-icons .icon-footer{
+  font-size: 36px;
+  transition: .3s ease;
+  display: inline-block;
+}
+footer .end-icons .icon-footer:hover{
+  transform: scale(1.3);
+}
+
+footer .phone-number-title{
+  font-size: 24px;
+  color: #fff;
+  font-weight: bold;
+}
+
+footer .phone-number{
+  font-size: 24px;
+  color: #fff;
+  font-weight: 600;
+}
+footer .last-title{
+  font-size: 24px;
+  color: #fff;
+  font-weight: bold;
+}
+
+footer  .last-icon{
+  font-size: 48px;
+  color: #00555e;
+  text-align: center;
+  padding: 0px 100px;
+}
+
+footer .last-link button{
+  border-radius: 20px;
+  border: 2px solid white;
+  width: 90px;
+  height: 60px;
+  
+}
+footer .last-link{
+  transition: .5s ease;
+}
+
+footer .last-link:hover{
+  transform: scale(1.2);
+}
+
+footer .copy-rights{
+  background-color: #00414b;
+  width: 100%;
+  height: 7vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer .copy-right {
+  margin-bottom: unset;
+  font-family: "Sansita Swashed", serif;
+
+}
+/* End Footer */
