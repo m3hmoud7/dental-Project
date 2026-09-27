@@ -1,0 +1,247 @@
+@import url("https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Sansita+Swashed:wght@300..900&display=swap");
+
+body {
+  font-family: "Almarai", serif;
+  font-weight: 500;
+}
+
+/* Start Header */
+header {
+  z-index: 999;
+  margin-bottom: 60px;
+}
+.nav-link {
+  color: #00555e;
+  font-weight: bold;
+  padding: 10px 15px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-link:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border-radius: 5px;
+}
+section nav {
+  margin-top: 20px;
+  background-color: #ffffff;
+}
+
+.dropdown-menu {
+  left: unset !important;
+  cursor: pointer;
+}
+
+.dropdown-item {
+  color: #00555e;
+  font-weight: bold;
+  margin: 0;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+}
+
+.dropdown-item:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+
+/* End Header */
+/* Start location Section */
+.container-four {
+  background-image: url(../images/خلفية.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 50px;
+}
+
+.container-four .location {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container-four .location .google-map {
+  margin: 50px;
+}
+
+.container-four .dir-ar {
+  direction: rtl;
+  list-style: none;
+}
+
+.container-four div .location-title-two {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+  margin: 20px;
+  background-color: #00555e;
+  border-radius: 20px;
+  width: 240px;
+  height: 60px;
+  text-align: center;
+}
+
+.container-four div .location-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #00555e;
+}
+@media (max-width: 992px) {
+  .navbar {
+    background-color: transparent !important;
+  }
+}
+section .title {
+  font-weight: 600;
+  padding: 15px;
+  animation-duration: 1s;
+  color: #00555e;
+}
+section .icons {
+  animation-delay: 0.5s;
+}
+section .icons .circle {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-color: #00555e;
+  border: 1px solid #00555e;
+  border-radius: 50%;
+  margin: 5px;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s ease all;
+}
+
+section .icons .circle:hover {
+  transform: scale(1.2);
+}
+section .phone-number-title,
+.phone-number {
+  padding-top: 10px;
+  font-weight: 600;
+  animation-duration: 0.5s;
+  color: #00555e;
+}
+/* End location Section */
+/* Start Footer */
+footer {
+  background-color: #00555e;
+  width: 100%;
+  height: auto;
+}
+
+footer div ul {
+  list-style: none;
+}
+footer div .end-title {
+  font-size: 22px;
+  font-weight: bold;
+}
+footer div ul a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  padding: 5px;
+  font-weight: bold;
+}
+
+footer div ul a:hover {
+  text-decoration: 2px underline;
+  color: #fff;
+}
+
+footer .appointments h3 {
+  color: #fff;
+  font-size: 22px;
+  padding: 5px;
+  font-weight: bold;
+}
+footer .appointments .appointment-title {
+  color: #fff;
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+footer .appointments .location-title {
+  color: #fff;
+  padding: 5px;
+  font-weight: bold;
+}
+
+footer .contact-us h3 {
+  font-size: 22px;
+  color: #fff;
+  font-weight: bold;
+}
+
+footer .title-appointment {
+  font-size: 18px;
+  color: #fff;
+  font-weight: bold;
+}
+footer .end-icons .icon-footer {
+  font-size: 36px;
+  transition: 0.3s ease;
+  display: inline-block;
+}
+footer .end-icons .icon-footer:hover {
+  transform: scale(1.3);
+}
+
+footer .phone-number-title {
+  font-size: 22px;
+  color: #fff;
+  font-weight: bold;
+}
+
+footer .phone-number {
+  font-size: 22px;
+  color: #fff;
+  font-weight: bold;
+}
+footer .last-title {
+  font-size: 24px;
+  color: #fff;
+  font-weight: bold;
+}
+
+footer .last-icon {
+  font-size: 48px;
+  color: #00555e;
+  text-align: center;
+  padding: 0px 100px;
+}
+
+footer .last-link button {
+  border-radius: 20px;
+  border: 2px solid white;
+  width: 90px;
+  height: 60px;
+}
+footer .last-link {
+  transition: 0.5s ease;
+}
+
+footer .last-link:hover {
+  transform: scale(1.2);
+}
+
+footer .copy-rights {
+  background-color: #00414b;
+  width: 100%;
+  height: 7vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer .copy-right {
+  margin-bottom: unset;
+  font-family: "Sansita Swashed", serif;
+}
+
+/* End Footer */
